@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    margin-top: 60px; /* Space for fixed navbar */
+}
+
+.left-menu {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding-left: 1px;
+    padding-top: 15px;
+    transition: width 0.3s;
+}
+
+.main-content {
+    flex: 1;
+    padding: 15px;
+}
+
+.right-panel {
+    width: 300px;
+    background-color: #f4f4f4;
+    padding: 15px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Collapsible Menu */
+.collapsed {
+    width: 0;
+    overflow: hidden;
+}
+
+.toggle-menu {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
